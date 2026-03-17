@@ -1,0 +1,22 @@
+int TH1 = 12 + 8 * 3; 
+    TH2 = (12 + 8) * 3;
+    TH3 = 50 / 5 + 4;
+    TH4 = 100 - 10 * 2;
+    TH5 = 15 \%2;
+    TH6 = 20 \% 5;
+    TH7 = 2^4 + 5;
+    TH8 = 10 / 2 * 4;
+    TH9 = 25 // 4;
+    THE10 = 5 + 5 * 10 - 2;
+
+
+Console.Writeline(TH1);
+Console.Writeline(TH2);
+Console.Writeline(TH3);
+Console.Writeline(TH4);
+Console.Writeline(TH5);
+Console.Writeline(TH6);
+Console.Writeline(TH7);
+Console.Writeline(TH8);
+Console.Writeline(TH9);
+Console.Writeline(TH10);
