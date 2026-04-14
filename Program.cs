@@ -1,30 +1,103 @@
-﻿using System.Diagnostics.CodeAnalysis;
-Console.WriteLine("Ejercicio1");
-for (int x = 0; x <= 10; x++){
-    Console.WriteLine(x);
-}
-Console.WriteLine("Ejercicio2");
-for (int y = 0; y <= 5; y++)
+﻿Console.WriteLine("Ejecicio 1");
+string Ejercico1(int n)
+
 {
-    Console.WriteLine("Hola");
+    string resultado;
+    if (n > 0)
+    {
+        resultado = ("Positivo");
+        return resultado;
+    }
+    else
+    {
+        resultado = ("negativo");
+        return resultado;
+    }
+
 }
-Console.WriteLine("Ejercicio3");
-for (int z = 0; z <= 20; z += 2)
+Console.WriteLine(Ejercico1(Convert.ToInt32(Console.ReadLine())));
+
+
+Console.WriteLine("Ejercicio 2, Ingrese su edad");
+string Ejercicio2(int E)
 {
-    Console.WriteLine(z);
+    string Resultado2;
+
+    if (E >= 18)
+    {
+        Resultado2 = ("Bienvenido a la fiesta");
+        return Resultado2;
+    }
+    else
+    {
+        Resultado2 = ("Lo sinto, eres muy joven");
+        return Resultado2;
+    }
+
 }
-Console.WriteLine("Ejercicio4");
-for (int a = 7; a <= 70; a += 7)
+Console.WriteLine(Ejercicio2(Convert.ToInt32(Console.ReadLine())));
+
+Console.WriteLine("Ejercicio 3, Ingrese su contraseña");
+string Ejercicio3(string C)
 {
-    Console.WriteLine(a);
-    
+    C = Console.ReadLine();
+    string Resultado3;
+    if (C == ("Phyton123"))
+    {
+        Resultado3 = ("Bienvenido");
+        return Resultado3;
+    }
+    else
+    {
+        Resultado3 = ("Contraseña incorrecta, este dispositivo se autodestruira");
+        return Resultado3;
+    }
+
 }
-Console.WriteLine("Ejercicio 5");
-int suma = 0;
-for (int b = 1; b <= 5; b++)
+Console.WriteLine(Ejercicio3((Console.ReadLine())));
+Console.WriteLine("Ejercicio 4, Ingrese un numero");
+
+string Ejercicio4(int n)
 {
-suma += b;
+    string resultado4;
+
+    if (n % 2 == 0)
+    {
+        resultado4 = ("El numero es par");
+        return resultado4;
+    }
+    else
+    {
+        resultado4 = ("El numero es impar");
+        return resultado4;
+    }
 }
 
-Console.Write("1+2+3+4+5= ");
-Console.Write(suma);
+Console.WriteLine(Ejercicio4(Convert.ToInt32(Console.ReadLine())));
+
+
+
+Console.WriteLine("Ejercicio 5, Ingrese su edad");
+int edad = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("¿Compraste palomitas? (si/no)");
+string palomitas = Console.ReadLine();
+
+
+string Ejercicio5(int E, string P)
+{
+    string resultado5;
+
+    if (E > 65 && P == "si")
+    {
+        resultado5 = ("Felicidades! Tenes entrada gratuita al cine");
+        return resultado5;
+    }
+    else
+    {
+        resultado5 = ("Compra la entrada o raja de aca");
+        return resultado5;
+    }
+}
+
+Console.WriteLine(Ejercicio5(edad, palomitas));
